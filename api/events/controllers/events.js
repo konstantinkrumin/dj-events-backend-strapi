@@ -1,6 +1,11 @@
 "use strict";
 const { sanitizeEntity } = require("strapi-utils");
 
+/**
+ * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
+ * to customize this controller
+ */
+
 module.exports = {
   // Create event with linked user
   async create(ctx) {
@@ -13,9 +18,8 @@ module.exports = {
       ctx.request.body.user = ctx.state.user.id;
       entity = await strapi.services.events.create(ctx.request.body);
     }
-    return sanitizeEntity(entity, { model: strapi.models.article });
+    return sanitizeEntity(entity, { model: strapi.models.events });
   },
-
   // Update user event
   async update(ctx) {
     const { id } = ctx.params;
@@ -42,7 +46,6 @@ module.exports = {
 
     return sanitizeEntity(entity, { model: strapi.models.events });
   },
-
   // Delete a user event
   async delete(ctx) {
     const { id } = ctx.params;
@@ -59,7 +62,6 @@ module.exports = {
     const entity = await strapi.services.events.delete({ id });
     return sanitizeEntity(entity, { model: strapi.models.events });
   },
-
   // Get logged in users
   async me(ctx) {
     const user = ctx.state.user;
