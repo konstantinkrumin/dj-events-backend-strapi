@@ -1,6 +1,6 @@
 # DJ Events [Next.JS + Strapi CMS Project]
 
-This is a platform that allows you to make post DJ Events. You can register / login and perform CRUD operations on the events that were created by you. Frontend is created using Next.JS and deployed on Vercel, and backend is on Strapi CMS and deployed on Heroku.
+This is a platform that allows you to make posts about DJ Events. You can register / login and perform CRUD operations on the events that were created by you. Frontend is created using Next.JS and deployed on Vercel, and backend is on Strapi CMS and deployed on Heroku.
 
 Stack: **Javascript**, **React**, **Next.JS**, **Strapi CMS**
 
