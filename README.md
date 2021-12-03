@@ -6,7 +6,7 @@ Stack: **Javascript**, **React**, **Next.JS**, **Strapi CMS**
 
 [Check It Out Here](https://dj-events-frontend-nextjs.vercel.app/)
 
-Alternatively you can start it locally by getting the following repositories:
+Alternatively, you can start it locally by getting the following repositories:
 
 - [Frontend Repo](https://github.com/konstantinkrumin/dj-events-frontend-nextjs)
 - [Backend Repo](https://github.com/konstantinkrumin/dj-events-backend-strapi)
@@ -29,7 +29,7 @@ Alternatively you can start it locally by getting the following repositories:
     NEXT_PUBLIC_API_URL=*****
 ```
 
-    And navigating to [localhost:3000](http://localhost:3000). You should see your app running.
+    And navigating to ```localhost:3000```. You should see your app running.
 
 3. Start backend server with:
 
@@ -43,7 +43,7 @@ Alternatively you can start it locally by getting the following repositories:
     npm run dev
 ```
 
-P.S. You will need to install the dependencies if you haven't previously done it:
+P.S. You will need to install the dependencies in both repos if you haven't previously done it:
 
 ```bash
     npm install
